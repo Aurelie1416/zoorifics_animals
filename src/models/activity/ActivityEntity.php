@@ -4,20 +4,20 @@ namespace App\ZoorificsAnimals\models\activity;
 class ActivityEntity
     {
         /** @var int|null */
-        private $id;
+        protected $id;
 
         /** @var string|null */
-        private $name;
+        protected $name;
 
         /** @var string|null */
-        private $description;        
+        protected $description;        
 
 
         /** @var string|null */
-        private $schedule;  
+        protected $schedule;  
 
         /** @var int|null */
-        private $userId;  
+        protected $userId;  
 
         /**
          * @return int|null

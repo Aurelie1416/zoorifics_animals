@@ -85,15 +85,15 @@ class Animal extends Refactory
         $animals = [];
         foreach ($pdo->fetchAll() as $row) {
             $animal = new AnimalEntity();
-            $animal->getName($row['name']);
-            $animal->getBreedId($row['breed']);
-            $animal->getSexe($row['sexe']);
-            $animal->getBornAt($row['birthdate']);
-            $animal->getLastMedicalCheckAt($row['lastMedicalCheck']);
-            $animal->getNextMedicalCheckAt($row['nextMedicalCheck']);
-            $animal->getImage($row['image']);
-            $animal->getWeight($row['weight']);
-            $animal->getStatus($row['status']);
+            $animal->setName($row['name']);
+            $animal->setBreedId($row['breed']);
+            $animal->setSexe($row['sexe']);
+            $animal->setBornAt($row['birthdate']);
+            $animal->setLastMedicalCheckAt($row['lastMedicalCheck']);
+            $animal->setNextMedicalCheckAt($row['nextMedicalCheck']);
+            $animal->setImage($row['image']);
+            $animal->setWeight($row['weight']);
+            $animal->setStatus($row['status']);
             $animals[] = $animal;
         }
 
@@ -113,15 +113,15 @@ class Animal extends Refactory
         $animals = [];
         foreach ($pdo->fetchAll() as $row) {
             $animal = new AnimalEntity();
-            $animal->getName($row['name']);
-            $animal->getBreedId($row['breed']);
-            $animal->getSexe($row['sexe']);
-            $animal->getBornAt($row['birthdate']);
-            $animal->getLastMedicalCheckAt($row['lastMedicalCheck']);
-            $animal->getNextMedicalCheckAt($row['nextMedicalCheck']);
-            $animal->getImage($row['image']);
-            $animal->getWeight($row['weight']);
-            $animal->getStatus($row['status']);
+            $animal->setName($row['name']);
+            $animal->setBreedId($row['breed']);
+            $animal->setSexe($row['sexe']);
+            $animal->setBornAt($row['birthdate']);
+            $animal->setLastMedicalCheckAt($row['lastMedicalCheck']);
+            $animal->setNextMedicalCheckAt($row['nextMedicalCheck']);
+            $animal->setImage($row['image']);
+            $animal->setWeight($row['weight']);
+            $animal->setStatus($row['status']);
             $animals[] = $animal;
         }
 
@@ -146,15 +146,15 @@ class Animal extends Refactory
             $animals = [];
             foreach ($pdo->fetchAll() as $row) {
                 $animal = new AnimalEntity();
-                $animal->getName($row['name']);
-                $animal->getBreedId($row['breed']);
-                $animal->getSexe($row['sexe']);
-                $animal->getBornAt($row['birthdate']);
-                $animal->getLastMedicalCheckAt($row['lastMedicalCheck']);
-                $animal->getNextMedicalCheckAt($row['nextMedicalCheck']);
-                $animal->getImage($row['image']);
-                $animal->getWeight($row['weight']);
-                $animal->getStatus($row['status']);
+                $animal->setName($row['name']);
+                $animal->setBreedId($row['breed']);
+                $animal->setSexe($row['sexe']);
+                $animal->setBornAt($row['birthdate']);
+                $animal->setLastMedicalCheckAt($row['lastMedicalCheck']);
+                $animal->setNextMedicalCheckAt($row['nextMedicalCheck']);
+                $animal->setImage($row['image']);
+                $animal->setWeight($row['weight']);
+                $animal->setStatus($row['status']);
                 $animals[] = $animal;
             }
         }

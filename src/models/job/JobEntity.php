@@ -5,13 +5,13 @@ namespace App\ZoorificsAnimals\models\job;
 class JobEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
     /** @var string|null */
-    private $post;
+    protected $post;
 
     /** @var array|null */
-    private $role;
+    protected $role;
 
     /**
      * @return int|null
@@ -40,7 +40,7 @@ class JobEntity
     /**
      * @param string|null $post
      */
-    public function setPost(?int $post): void
+    public function setPost(?string $post): void
     {
         $this->post = $post;
     }
@@ -54,9 +54,9 @@ class JobEntity
     }
 
     /**
-     * @param array|null $role
+     * @param string|null $role
      */
-    public function setRole(?array $role): void
+    public function setRole(?string $role): void
     {
         $this->role = $role;
     }

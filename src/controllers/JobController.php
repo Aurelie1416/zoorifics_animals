@@ -21,7 +21,6 @@ class JobController extends AbstractController
     */
     public function index(): void
     { 
-        //require_once(__DIR__ . '/../models/job/Job.php');
         $jobsRefactory = new Job();
         $jobs = $jobsRefactory->getJobs();
         ob_start();

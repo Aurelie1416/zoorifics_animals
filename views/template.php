@@ -28,7 +28,7 @@
                             <a class="nav-link" href="./index.php?ctrl=diet&action=index">Liste des catégories d'animaux</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.php?ctrl=breed&action=index">Liste des espèces d'animaux</a>
+                            <a class="nav-link" href="./index.php?ctrl=breed&action=index">Liste des espèces d'animaux</a> 
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./index.php?ctrl=activity&action=index">Liste des spectacles</a>

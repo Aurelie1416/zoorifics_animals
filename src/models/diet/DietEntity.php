@@ -7,16 +7,16 @@ use DateTime;
 class DietEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
     /** @var string|null */
-    private $name;
+    protected $name;
 
     /** @var string|null */
-    private $description;
+    protected $description;
 
     /** @var string|null */
-    private $color;
+    protected $color;
 
     /**
      * @return int|null
@@ -45,7 +45,7 @@ class DietEntity
     /**
      * @param string|null $color
      */
-    public function setColor(?int $color): void
+    public function setColor(?string $color): void
     {
         $this->color = $color;
     }

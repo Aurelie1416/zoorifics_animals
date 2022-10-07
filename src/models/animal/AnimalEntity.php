@@ -7,34 +7,34 @@ use DateTime;
 class AnimalEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
     /** @var string|null */
-    private $name;
+    protected $name;
 
     /** @var int|null */
-    private $breedId;
+    protected $breedId;
 
     /** @var string|null */
-    private $birthdate;
+    protected $birthdate;
 
     /** @var datetime|null */
-    private $lastMedicalCheck;
+    protected $lastMedicalCheck;
 
     /** @var datetime|null */
-    private $nextMedicalCheckAt;
+    protected $nextMedicalCheckAt;
 
     /** @var string|null */
-    private $status;
+    protected $status;
 
     /** @var bool|null */
-    private $sexe;
+    protected $sexe;
 
     /** @var string|null */
-    private $image;
+    protected $image;
 
     /** @var int|null */
-    private $weight;
+    protected $weight;
 
     /**
      * @return int|null

@@ -75,14 +75,14 @@ use App\ZoorificsAnimals\models\user\UserEntity;
             $users = [];
             foreach ($pdo->fetchAll() as $row) {
                 $user = new UserEntity();
-                $user->getFirstname($row['firstname']);
-                $user->getLastname($row['lastname']);
-                $user->getJobId($row['jobId']);
-                $user->getHiredAt($row['hiredAt']);
-                $user->getToken($row['token']);
-                $user->getDateTokenAt($row['dateTokenAt']);
-                $user->getEmail($row['email']);
-                $user->getPhone($row['phone']);
+                $user->setFirstname($row['firstname']);
+                $user->setLastname($row['lastname']);
+                $user->setJobId($row['jobId']);
+                $user->setHiredAt($row['hiredAt']);
+                $user->setToken($row['token']);
+                $user->setDateTokenAt($row['dateTokenAt']);
+                $user->setEmail($row['email']);
+                $user->setPhone($row['phone']);
                 $users[] = $user;
             }
 
@@ -99,14 +99,14 @@ use App\ZoorificsAnimals\models\user\UserEntity;
             $users = [];
             foreach ($pdo->fetchAll() as $row) {
                 $user = new UserEntity();
-                $user->getFirstname($row['firstname']);
-                $user->getLastname($row['lastname']);
-                $user->getJobId($row['jobId']);
-                $user->getHiredAt($row['hiredAt']);
-                $user->getToken($row['token']);
-                $user->getDateTokenAt($row['dateTokenAt']);
-                $user->getEmail($row['email']);
-                $user->getPhone($row['phone']);
+                $user->setFirstname($row['firstname']);
+                $user->setLastname($row['lastname']);
+                $user->setJobId($row['jobId']);
+                $user->setHiredAt($row['hiredAt']);
+                $user->setToken($row['token']);
+                $user->setDateTokenAt($row['dateTokenAt']);
+                $user->setEmail($row['email']);
+                $user->setPhone($row['phone']);
                 $users[] = $user;
             }
 
@@ -124,12 +124,12 @@ use App\ZoorificsAnimals\models\user\UserEntity;
                 $id
             ]);
             $user = new UserEntity();
-            $user->getFirstname($_POST['firstname']);
-            $user->getLastname($_POST['lastname']);
-            $user->getJobId($_POST['job_id']);
-            $user->getHiredAt($_POST['hiredAt']);
-            $user->getEmail($_POST['email']);
-            $user->getPhone($_POST['phone']);
+            $user->setFirstname($_POST['firstname']);
+            $user->setLastname($_POST['lastname']);
+            $user->setJobId($_POST['job_id']);
+            $user->setHiredAt($_POST['hiredAt']);
+            $user->setEmail($_POST['email']);
+            $user->setPhone($_POST['phone']);
             return $user;
         }
 
@@ -144,12 +144,12 @@ use App\ZoorificsAnimals\models\user\UserEntity;
                 $email
             ]);
             $user = new UserEntity();
-            $user->getFirstname($_POST['firstname']);
-            $user->getLastname($_POST['lastname']);
-            $user->getJobId($_POST['job_id']);
-            $user->getHiredAt($_POST['hiredAt']);
-            $user->getEmail($_POST['email']);
-            $user->getPhone($_POST['phone']);
+            $user->setFirstname($_POST['firstname']);
+            $user->setLastname($_POST['lastname']);
+            $user->setJobId($_POST['job_id']);
+            $user->setHiredAt($_POST['hiredAt']);
+            $user->setEmail($_POST['email']);
+            $user->setPhone($_POST['phone']);
             return $user;
         }
 

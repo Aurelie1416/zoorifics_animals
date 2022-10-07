@@ -2,7 +2,7 @@
 
 namespace App\ZoorificsAnimals\controllers;
 
-use app\zoorificsAnimals\controllers\AbstractController;
+use App\ZoorificsAnimals\controllers\AbstractController;
 use App\ZoorificsAnimals\models\Ticket\Ticket;
 use App\ZoorificsAnimals\models\ticket\TicketEntity;
 use Fpdf\Fpdf;

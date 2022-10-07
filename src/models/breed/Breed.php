@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Zoorificsanimals\models\breed;
+namespace App\ZoorificsAnimals\models\breed;
 
-use App\Zoorificsanimals\models\Refactory;
-use App\Zoorificsanimals\models\breed\BreedEntity;
+use App\ZoorificsAnimals\models\Refactory;
+use App\ZoorificsAnimals\models\breed\BreedEntity;
 
 
 class Breed extends Refactory
@@ -59,9 +59,9 @@ class Breed extends Refactory
         $breeds = [];
         foreach ($pdo->fetchAll() as $row) {
             $breed = new BreedEntity();
-            $breed->getName($row['name']);
-            $breed->getDietId($row['diet']);
-            $breed->getDescription($row['description']);
+            $breed->setName($row['name']);
+            $breed->setDietId($row['diet']);
+            $breed->setDescription($row['description']);
             $breeds[] = $breed;
         }
 
@@ -81,9 +81,9 @@ class Breed extends Refactory
         $breeds = [];
         foreach ($pdo->fetchAll() as $row) {
             $breed = new BreedEntity();
-            $breed->getName($row['name']);
-            $breed->getDietId($row['diet']);
-            $breed->getDescription($row['description']);
+            $breed->setName($row['name']);
+            $breed->setDietId($row['diet']);
+            $breed->setDescription($row['description']);
             $breeds[] = $breed;
         }
 
@@ -115,9 +115,9 @@ class Breed extends Refactory
             $id
         ]);
         $breed = new BreedEntity();
-        $breed->getName($_POST['name']);
-        $breed->getDietId($_POST['diet']);
-        $breed->getDescription($_POST['description']);
+        $breed->getName();
+        $breed->getDietId();
+        $breed->getDescription();
         return $breed;
     }
 }

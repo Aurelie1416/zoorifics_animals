@@ -55,9 +55,9 @@ class Job extends Refactory
         $jobs = [];
         foreach ($pdo->fetchAll() as $row) {
             $job = new JobEntity();
-            $job->getId($row['id']);
-            $job->getPost($row['post']);
-            $job->getRole($row['role']);
+            $job->setId(intval($row['id']));
+            $job->setPost($row['post']);
+            $job->setRole($row['role']);
             $jobs[] = $job;
         }
 

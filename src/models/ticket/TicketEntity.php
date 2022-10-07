@@ -7,16 +7,16 @@ use DateTime;
 class TicketEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
     /** @var int|null */
-    private $number;
+    protected $number;
 
     /** @var string|null */
-    private $bought_at;
+    protected $bought_at;
 
     /** @var int|null */
-    private $price;
+    protected $price;
 
     /**
      * @return int|null

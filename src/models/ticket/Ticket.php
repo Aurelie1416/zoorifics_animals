@@ -49,9 +49,9 @@ use App\ZoorificsAnimals\models\ticket\TicketEntity;
             $tickets = [];
             foreach ($pdo->fetchAll() as $row) {
                 $ticket = new TicketEntity();
-                $ticket->getNumber($row['number']);
-                $ticket->getBoughtAt($row['boughtAt']);
-                $ticket->getPrice($row['price']);
+                $ticket->setNumber($row['number']);
+                $ticket->setBoughtAt($row['boughtAt']);
+                $ticket->setPrice($row['price']);
                 $tickets[] = $ticket;
             }
 
@@ -69,9 +69,9 @@ use App\ZoorificsAnimals\models\ticket\TicketEntity;
                 $id
             ]);
             $ticket = new TicketEntity();
-            $ticket->getNumber($_POST['number']);
-            $ticket->getBoughtAt($_POST['boughtAt']);
-            $ticket->getPrice($_POST['price']);
+            $ticket->setNumber($_POST['number']);
+            $ticket->setBoughtAt($_POST['boughtAt']);
+            $ticket->setPrice($_POST['price']);
             return $ticket;
         }
 

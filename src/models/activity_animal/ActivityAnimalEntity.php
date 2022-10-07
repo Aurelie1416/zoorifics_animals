@@ -4,10 +4,10 @@ namespace App\ZoorificsAnimals\models\activity_animal;
 class ActivityAnimalEntity
     {
         /** @var int|null */
-        private $activityId;
+        protected $activityId;
 
         /** @var int|null */
-        private $animalId;
+        protected $animalId;
 
         /**
          * @return int|null

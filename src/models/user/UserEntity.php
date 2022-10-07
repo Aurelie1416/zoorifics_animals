@@ -7,34 +7,34 @@ use DateTime;
 class UserEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
      /** @var string|null */
-     private $password;
+     protected $password;
 
     /** @var string|null */
-    private $firstname;
+    protected $firstname;
 
     /** @var string|null */
-    private $lastname;
+    protected $lastname;
 
     /** @var string|null */
-    private $email;
+    protected $email;
 
     /** @var string|null */
-    private $phone;
+    protected $phone;
 
     /** @var datetime|null */
-    private $dateTokenAt;
+    protected $dateTokenAt;
 
     /** @var string|null */
-    private $token;
+    protected $token;
 
     /** @var datetime|null */
-    private $hiredAt;
+    protected $hiredAt;
 
     /** @var int|null */
-    private $jobId;
+    protected $jobId;
 
     /**
      * @return int|null

@@ -42,9 +42,9 @@ use App\ZoorificsAnimals\models\diet\DietEntity;
             $diets = [];
             foreach ($pdo->fetchAll() as $row) {
                 $diet = new DietEntity();
-                $diet->getName($row['name']);
-                $diet->getColor($row['color']);
-                $diet->getDescription($row['description']);
+                $diet->setName($row['name']);
+                $diet->setColor($row['color']);
+                $diet->setDescription($row['description']);
                 $diets[] = $diet;
             }
 
@@ -62,9 +62,9 @@ use App\ZoorificsAnimals\models\diet\DietEntity;
                 $id
             ]);
             $diet = new DietEntity();
-            $diet->getName($_POST['name']);
-            $diet->getColor($_POST['color']);
-            $diet->getDescription($_POST['description']);
+            $diet->setName($_POST['name']);
+            $diet->setColor($_POST['color']);
+            $diet->setDescription($_POST['description']);
             return $diet;
         }
 

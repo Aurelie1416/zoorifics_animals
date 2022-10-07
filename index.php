@@ -25,7 +25,7 @@ use App\ZoorificsAnimals\controllers\DietController;
         case "activity":
             $controller = new ActivityController();
             break;
-        case "tickets":
+        case "ticket":
             $controller = new TicketController();
             break;
         case "animal":

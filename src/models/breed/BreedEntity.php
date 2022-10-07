@@ -7,16 +7,16 @@ use DateTime;
 class BreedEntity
 {
     /** @var int|null */
-    private $id;
+    protected $id;
 
     /** @var string|null */
-    private $name;
+    protected $name;
 
     /** @var string|null */
-    private $description;
+    protected $description;
 
     /** @var int|null */
-    private $diedId;
+    protected $diedId;
 
     /**
      * @return int|null

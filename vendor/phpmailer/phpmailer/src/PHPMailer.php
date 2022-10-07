@@ -523,14 +523,14 @@ class PHPMailer
     public $DKIM_extraHeaders = [];
 
     /**
-     * DKIM private key file path.
+     * DKIM protected key file path.
      *
      * @var string
      */
     public $DKIM_private = '';
 
     /**
-     * DKIM private key string.
+     * DKIM protected key string.
      *
      * If set, takes precedence over `$DKIM_private`.
      *
@@ -855,7 +855,7 @@ class PHPMailer
      *
      * @return bool
      */
-    private function mailPassthru($to, $subject, $body, $header, $params)
+    protected function mailPassthru($to, $subject, $body, $header, $params)
     {
         //Check overloading of mail function to avoid double-encoding
         if (ini_get('mbstring.func_overload') & 1) {
@@ -4151,7 +4151,7 @@ class PHPMailer
      * @param string $base_key
      * @return string
      */
-    private function getSmtpErrorMessage($base_key)
+    protected function getSmtpErrorMessage($base_key)
     {
         $message = $this->lang($base_key);
         $error = $this->smtp->getError();
@@ -4664,11 +4664,11 @@ class PHPMailer
     }
 
     /**
-     * Set the public and private key files and password for S/MIME signing.
+     * Set the public and protected key files and password for S/MIME signing.
      *
      * @param string $cert_filename
      * @param string $key_filename
-     * @param string $key_pass            Password for private key
+     * @param string $key_pass            Password for protected key
      * @param string $extracerts_filename Optional path to chain certificate
      */
     public function sign($cert_filename, $key_filename, $key_pass, $extracerts_filename = '')

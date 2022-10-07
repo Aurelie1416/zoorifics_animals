@@ -1,6 +1,6 @@
 <h1>Liste des espèces</h1>
 <?php if (isset($_GET['id'])) { ?>
-    <h2><?= $diet->getName();?></h2>
+    <h2><?= $diets->getName();?></h2>
     <p><?= $diet->getDescription() ?></p>
 <?php } ?>
 

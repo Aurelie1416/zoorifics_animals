@@ -170,7 +170,7 @@ class UserController extends JobController
                             $user->setDateTokenAt(null);
                             $user->setToken(null);
                             $userRefactory = new User();
-                            $userRefactory->edit($user);
+                            $userRefactory->edit($user);                          
                             $this->connexion();
                         }
                     }
